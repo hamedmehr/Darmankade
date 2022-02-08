@@ -1,0 +1,20 @@
+D:\Source\Workspaces\GazhClub2\GazhOcelotGateWay\bin\Debug\netcoreapp2.2\web.config
+D:\Source\Workspaces\GazhClub2\GazhOcelotGateWay\bin\Debug\netcoreapp2.2\appsettings.Development.json
+D:\Source\Workspaces\GazhClub2\GazhOcelotGateWay\bin\Debug\netcoreapp2.2\appsettings.json
+D:\Source\Workspaces\GazhClub2\GazhOcelotGateWay\bin\Debug\netcoreapp2.2\Configuration\CoreRoute - Copy.json
+D:\Source\Workspaces\GazhClub2\GazhOcelotGateWay\bin\Debug\netcoreapp2.2\Configuration\CoreRoute.json
+D:\Source\Workspaces\GazhClub2\GazhOcelotGateWay\bin\Debug\netcoreapp2.2\GazhOcelotGateWay.deps.json
+D:\Source\Workspaces\GazhClub2\GazhOcelotGateWay\bin\Debug\netcoreapp2.2\GazhOcelotGateWay.runtimeconfig.json
+D:\Source\Workspaces\GazhClub2\GazhOcelotGateWay\bin\Debug\netcoreapp2.2\GazhOcelotGateWay.runtimeconfig.dev.json
+D:\Source\Workspaces\GazhClub2\GazhOcelotGateWay\bin\Debug\netcoreapp2.2\GazhOcelotGateWay.dll
+D:\Source\Workspaces\GazhClub2\GazhOcelotGateWay\bin\Debug\netcoreapp2.2\GazhOcelotGateWay.pdb
+D:\Source\Workspaces\GazhClub2\GazhOcelotGateWay\obj\Debug\netcoreapp2.2\GazhOcelotGateWay.AssemblyInfoInputs.cache
+D:\Source\Workspaces\GazhClub2\GazhOcelotGateWay\obj\Debug\netcoreapp2.2\GazhOcelotGateWay.AssemblyInfo.cs
+D:\Source\Workspaces\GazhClub2\GazhOcelotGateWay\obj\Debug\netcoreapp2.2\GazhOcelotGateWay.csproj.CoreCompileInputs.cache
+D:\Source\Workspaces\GazhClub2\GazhOcelotGateWay\obj\Debug\netcoreapp2.2\GazhOcelotGateWay.RazorAssemblyInfo.cache
+D:\Source\Workspaces\GazhClub2\GazhOcelotGateWay\obj\Debug\netcoreapp2.2\GazhOcelotGateWay.RazorAssemblyInfo.cs
+D:\Source\Workspaces\GazhClub2\GazhOcelotGateWay\obj\Debug\netcoreapp2.2\GazhOcelotGateWay.RazorTargetAssemblyInfo.cache
+D:\Source\Workspaces\GazhClub2\GazhOcelotGateWay\obj\Debug\netcoreapp2.2\GazhOcelotGateWay.dll
+D:\Source\Workspaces\GazhClub2\GazhOcelotGateWay\obj\Debug\netcoreapp2.2\GazhOcelotGateWay.pdb
+D:\Source\Workspaces\GazhClub2\GazhOcelotGateWay\obj\Debug\netcoreapp2.2\GazhOcelotGateWay.genruntimeconfig.cache
+D:\Source\Workspaces\GazhClub2\GazhOcelotGateWay\obj\Debug\netcoreapp2.2\GazhOcelotGateWay.csproj.AssemblyReference.cache

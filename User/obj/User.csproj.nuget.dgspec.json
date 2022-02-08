@@ -1,0 +1,375 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Hamed\\source\\repos\\Darmankade\\User\\User.csproj": {}
+  },
+  "projects": {
+    "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Application\\Darmankade.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Application\\Darmankade.Application.csproj",
+        "projectName": "Darmankade.Application",
+        "projectPath": "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Application\\Darmankade.Application.csproj",
+        "packagesPath": "C:\\Users\\Hamed\\.nuget\\packages\\",
+        "outputPath": "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Hamed\\.nuget\\packages\\telerik.ui.for.aspnet.core\\2021.3.914": {},
+          "C:\\Users\\Hamed\\Downloads\\Compressed\\Stimulsoft_Reports_AIO_2019.4.2_Downloadly.ir\\Stimulsoft Reports AIO 2019.4.2\\Crack\\Libs\\Reports.NetCore": {},
+          "D:\\Offline Nuget Packages\\KendoUI\\2018.1.117\\2018.1.117": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Contract\\Darmankade.Contract.csproj": {
+                "projectPath": "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Contract\\Darmankade.Contract.csproj"
+              },
+              "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Model\\Darmankade.Model.csproj": {
+                "projectPath": "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Model\\Darmankade.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Contract\\Darmankade.Contract.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Contract\\Darmankade.Contract.csproj",
+        "projectName": "Darmankade.Contract",
+        "projectPath": "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Contract\\Darmankade.Contract.csproj",
+        "packagesPath": "C:\\Users\\Hamed\\.nuget\\packages\\",
+        "outputPath": "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Contract\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Hamed\\.nuget\\packages\\telerik.ui.for.aspnet.core\\2021.3.914": {},
+          "C:\\Users\\Hamed\\Downloads\\Compressed\\Stimulsoft_Reports_AIO_2019.4.2_Downloadly.ir\\Stimulsoft Reports AIO 2019.4.2\\Crack\\Libs\\Reports.NetCore": {},
+          "D:\\Offline Nuget Packages\\KendoUI\\2018.1.117\\2018.1.117": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Model\\Darmankade.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Model\\Darmankade.Model.csproj",
+        "projectName": "Darmankade.Model",
+        "projectPath": "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Model\\Darmankade.Model.csproj",
+        "packagesPath": "C:\\Users\\Hamed\\.nuget\\packages\\",
+        "outputPath": "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Hamed\\.nuget\\packages\\telerik.ui.for.aspnet.core\\2021.3.914": {},
+          "C:\\Users\\Hamed\\Downloads\\Compressed\\Stimulsoft_Reports_AIO_2019.4.2_Downloadly.ir\\Stimulsoft Reports AIO 2019.4.2\\Crack\\Libs\\Reports.NetCore": {},
+          "D:\\Offline Nuget Packages\\KendoUI\\2018.1.117\\2018.1.117": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.ServiceBroker\\Darmankade.ServiceBroker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.ServiceBroker\\Darmankade.ServiceBroker.csproj",
+        "projectName": "Darmankade.ServiceBroker",
+        "projectPath": "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.ServiceBroker\\Darmankade.ServiceBroker.csproj",
+        "packagesPath": "C:\\Users\\Hamed\\.nuget\\packages\\",
+        "outputPath": "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.ServiceBroker\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Hamed\\.nuget\\packages\\telerik.ui.for.aspnet.core\\2021.3.914": {},
+          "C:\\Users\\Hamed\\Downloads\\Compressed\\Stimulsoft_Reports_AIO_2019.4.2_Downloadly.ir\\Stimulsoft Reports AIO 2019.4.2\\Crack\\Libs\\Reports.NetCore": {},
+          "D:\\Offline Nuget Packages\\KendoUI\\2018.1.117\\2018.1.117": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.2.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Hamed\\source\\repos\\Darmankade\\User\\User.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Hamed\\source\\repos\\Darmankade\\User\\User.csproj",
+        "projectName": "User",
+        "projectPath": "D:\\Hamed\\source\\repos\\Darmankade\\User\\User.csproj",
+        "packagesPath": "C:\\Users\\Hamed\\.nuget\\packages\\",
+        "outputPath": "D:\\Hamed\\source\\repos\\Darmankade\\User\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Hamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Hamed\\.nuget\\packages\\telerik.ui.for.aspnet.core\\2021.3.914": {},
+          "C:\\Users\\Hamed\\Downloads\\Compressed\\Stimulsoft_Reports_AIO_2019.4.2_Downloadly.ir\\Stimulsoft Reports AIO 2019.4.2\\Crack\\Libs\\Reports.NetCore": {},
+          "D:\\Offline Nuget Packages\\KendoUI\\2018.1.117\\2018.1.117": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Application\\Darmankade.Application.csproj": {
+                "projectPath": "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Application\\Darmankade.Application.csproj"
+              },
+              "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Contract\\Darmankade.Contract.csproj": {
+                "projectPath": "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Contract\\Darmankade.Contract.csproj"
+              },
+              "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Model\\Darmankade.Model.csproj": {
+                "projectPath": "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.Model\\Darmankade.Model.csproj"
+              },
+              "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.ServiceBroker\\Darmankade.ServiceBroker.csproj": {
+                "projectPath": "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.ServiceBroker\\Darmankade.ServiceBroker.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

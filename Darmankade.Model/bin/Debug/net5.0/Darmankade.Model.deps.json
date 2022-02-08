@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Darmankade.Model/1.0.0": {
+        "runtime": {
+          "Darmankade.Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Darmankade.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

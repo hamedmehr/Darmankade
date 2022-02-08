@@ -1,0 +1,14 @@
+Darmankade\bin
+Darmankade\obj
+Darmankade.Application\bin
+Darmankade.Application\obj
+Darmankade.Contract\bin
+Darmankade.Contract\obj
+Darmankade.Model\bin
+Darmankade.Model\obj
+Darmankade.ServiceBroker\bin
+Darmankade.ServiceBroker\obj
+User\bin
+User\obj
+OcelotGateWay\bin
+OcelotGateWay\obj

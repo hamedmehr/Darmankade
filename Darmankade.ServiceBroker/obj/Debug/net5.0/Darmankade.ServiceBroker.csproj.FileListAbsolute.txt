@@ -1,0 +1,12 @@
+D:\Hamed\source\repos\Darmankade\Darmankade.ServiceBroker\bin\Debug\net5.0\Darmankade.ServiceBroker.deps.json
+D:\Hamed\source\repos\Darmankade\Darmankade.ServiceBroker\bin\Debug\net5.0\Darmankade.ServiceBroker.dll
+D:\Hamed\source\repos\Darmankade\Darmankade.ServiceBroker\bin\Debug\net5.0\ref\Darmankade.ServiceBroker.dll
+D:\Hamed\source\repos\Darmankade\Darmankade.ServiceBroker\bin\Debug\net5.0\Darmankade.ServiceBroker.pdb
+D:\Hamed\source\repos\Darmankade\Darmankade.ServiceBroker\obj\Debug\net5.0\Darmankade.ServiceBroker.csproj.AssemblyReference.cache
+D:\Hamed\source\repos\Darmankade\Darmankade.ServiceBroker\obj\Debug\net5.0\Darmankade.ServiceBroker.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hamed\source\repos\Darmankade\Darmankade.ServiceBroker\obj\Debug\net5.0\Darmankade.ServiceBroker.AssemblyInfoInputs.cache
+D:\Hamed\source\repos\Darmankade\Darmankade.ServiceBroker\obj\Debug\net5.0\Darmankade.ServiceBroker.AssemblyInfo.cs
+D:\Hamed\source\repos\Darmankade\Darmankade.ServiceBroker\obj\Debug\net5.0\Darmankade.ServiceBroker.csproj.CoreCompileInputs.cache
+D:\Hamed\source\repos\Darmankade\Darmankade.ServiceBroker\obj\Debug\net5.0\Darmankade.ServiceBroker.dll
+D:\Hamed\source\repos\Darmankade\Darmankade.ServiceBroker\obj\Debug\net5.0\ref\Darmankade.ServiceBroker.dll
+D:\Hamed\source\repos\Darmankade\Darmankade.ServiceBroker\obj\Debug\net5.0\Darmankade.ServiceBroker.pdb

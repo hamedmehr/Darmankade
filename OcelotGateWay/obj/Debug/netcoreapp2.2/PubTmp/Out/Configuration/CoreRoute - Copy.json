@@ -1,0 +1,3421 @@
+﻿{
+  "ReRoutes": [
+
+    // start ***** authorization
+
+    {
+      "DownstreamPathTemplate": "/api/{version}/about/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 53261
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/about/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+      //"QoSOptions": {
+      //  "ExceptionsAllowedBeforeBreaking": 3,
+      //  "DurationOfBreak": 1000,
+      //  "TimeoutValue": 2000
+      //}
+    },
+
+    // end ***** authorization
+
+    // start ***** booklibrary
+
+    {
+      "DownstreamPathTemplate": "/api/{version}/booklibrary/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/booklibrary/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+
+    // end ***** booklibrary
+
+    // start ***** city
+
+    {
+      "DownstreamPathTemplate": "/api/{version}/city/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/city/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "City"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+
+    // end ***** city
+
+    // start ***** dashboard
+
+    {
+      "DownstreamPathTemplate": "/api/{version}/dashboard/getfaq",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/dashboard/getfaq",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/dashboard/getsettingtermsandconditions",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/dashboard/getsettingtermsandconditions",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/dashboard/getpackagetermsandconditions",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/dashboard/getpackagetermsandconditions",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/dashboard/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/dashboard/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+
+    // end ***** dashboard
+
+    // start ***** exam
+
+    {
+      "DownstreamPathTemplate": "/api/{version}/exam/getquestiondifficulty",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/exam/getquestiondifficulty",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/exam/getquestiontypes",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/exam/getquestiontypes",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/exam/getexamchapters/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/exam/getexamchapters/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/exam/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/exam/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+
+    // end ***** exam
+
+    // start ***** feedback
+
+    {
+      "DownstreamPathTemplate": "/api/{version}/feedback/getbookranks",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/feedback/getbookranks",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/feedback/getdocumentranks",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/feedback/getdocumentranks",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/feedback/getmediaranks",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/feedback/getmediaranks",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/feedback/getbookfeedbackanswers",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/feedback/getbookfeedbackanswers",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/feedback/getdocumentfeedbackanswers",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/feedback/getdocumentfeedbackanswers",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/feedback/getvideofeedbackanswers",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/feedback/getvideofeedbackanswers",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/feedback/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/feedback/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+
+    // end ***** feedback
+
+    // start ***** hub
+
+    {
+      "DownstreamPathTemplate": "/api/{version}/hub/gethubservices",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/hub/gethubservices",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/hub/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/hub/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+
+    // end ***** hub
+
+    // start ***** note
+
+    {
+      "DownstreamPathTemplate": "/api/{version}/note/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/note/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+
+    // end ***** note
+
+    // start ***** notification
+
+    {
+      "DownstreamPathTemplate": "/api/{version}/notification/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/notification/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+
+    // end ***** notification
+
+    // start ***** package
+
+    {
+      "DownstreamPathTemplate": "/api/{version}/package/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/package/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+
+    // end ***** package
+
+    // start ***** payment
+
+    {
+      "DownstreamPathTemplate": "/api/{version}/payment/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/payment/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+
+    // end ***** payment
+
+    // start ***** profile
+
+    {
+      "DownstreamPathTemplate": "/api/{version}/profile/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/profile/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+
+    // end ***** profile
+
+    // start ***** stream
+
+    {
+      "DownstreamPathTemplate": "/api/{version}/stream/getvideo/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 4301
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/stream/getvideo/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      //"FileCacheOptions": {
+      //   "TtlSeconds": 2000,
+      //   "Region": "checkauthforcache"
+      //  },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 20000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/stream/playlist/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 4301
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/stream/playlist/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      //"FileCacheOptions": {
+      //   "TtlSeconds": 2000,
+      //    "Region": "checkauthforcache"
+      //  },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 20000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/stream/qualityplaylist/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 4301
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/stream/qualityplaylist/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      //"FileCacheOptions": {
+      // "TtlSeconds": 2000,
+      //  "Region": "checkauthforcache"
+      // },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 20000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/stream/video/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 4301
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/stream/video/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      //"FileCacheOptions": {
+      //  "TtlSeconds": 2000,
+      //  "Region": "checkauthforcache"
+      //},
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 20000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/stream/document/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/stream/document/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      //"FileCacheOptions": {
+      //  "TtlSeconds": 2000,
+      //  "Region": "checkauthforcache"
+      //},
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 20000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/stream/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/stream/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 20000
+      }
+    },
+
+    // end ***** stream
+
+    // start ***** thumbnail
+
+    {
+      "DownstreamPathTemplate": "/api/{version}/thumbnail/mediathumbnail/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 4301
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/thumbnail/mediathumbnail/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      //"FileCacheOptions": {
+      //  "TtlSeconds": 2000,
+      //   "Region": "checkauthforcache"
+      // },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 20000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/thumbnail/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 4300
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 4301
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 4301
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/thumbnail/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 20000
+      }
+    },
+
+    // end ***** thumbnail
+
+    // start ***** usereducation
+
+    {
+      "DownstreamPathTemplate": "/api/{version}/usereducation/getlevels",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/usereducation/getlevels",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/usereducation/getfields/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/usereducation/getfields/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/usereducation/getgrades",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/usereducation/getgrades",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/usereducation/getacademicyears",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/usereducation/getacademicyears",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/usereducation/getbookinfobyid/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/usereducation/getbookinfobyid/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/usereducation/getchapters/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/usereducation/getchapters/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/usereducation/getchapterswithsubjects/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/usereducation/getchapterswithsubjects/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/usereducation/getsubjects/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/usereducation/getsubjects/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/usereducation/getdocuments/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/usereducation/getdocuments/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/usereducation/getvideos/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/usereducation/getvideos/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/usereducation/getbookteaser/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/usereducation/getbookteaser/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/usereducation/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/usereducation/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "DELETE" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+
+    // end ***** usereducation
+
+    // start ***** userregistration
+
+    {
+      "DownstreamPathTemplate": "/api/{version}/userregistration/getavatarsbylevelid/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/userregistration/getavatarsbylevelid/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/userregistration/getavatarsbygradeid/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/userregistration/getavatarsbygradeid/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/userregistration/getavatars",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/userregistration/getavatars",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "checkauthforcache"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/userregistration/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/userregistration/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+
+    // end ***** userregistration
+
+    // start ***** version
+    {
+      "DownstreamPathTemplate": "/api/version/androidversion/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/v1/version/androidversion/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "version"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v2/version/androidversion/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/v2/version/androidversion/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "version"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v2/version/iosversion/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/v2/version/iosversion/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 2000,
+        "Region": "version"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/version/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 80
+        },
+        {
+          "Host": "192.168.40.81",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 90
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 90
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/version/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 300,
+        "Region": "version"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+
+    // end ***** version
+
+    // start ***** ticket
+
+    {
+      "DownstreamPathTemplate": "/api/{version}/ticket/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 4200
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 4200
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 4200
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 4200
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 4200
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/ticket/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/ticketbo/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 4200
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 4200
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 4200
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 4200
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 4200
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/ticketbo/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+
+    // end ***** ticket
+
+    // start ***** ticketsubject
+
+    {
+      "DownstreamPathTemplate": "/api/{version}/ticketsubject/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 4200
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 4200
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 4200
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 4200
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 4200
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/ticketsubject/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 300,
+        "Region": "ticketsubject"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/{version}/ticketsubjectbo/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 4200
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 4200
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 4200
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 4200
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 4200
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/ticketsubjectbo/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "FileCacheOptions": {
+        "TtlSeconds": 300,
+        "Region": "ticketsubject"
+      },
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+
+    // end ***** ticketsubject
+
+    // start ***** DeskEvent
+
+    {
+      "DownstreamPathTemplate": "/api/{version}/deskevent/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 4008
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 4008
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 4008
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 4008
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 4008
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/deskevent/{everything}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    },
+
+    // end ***** DeskEvent
+
+    // start ***** GajinoCustomerRefrence
+
+    {
+      "DownstreamPathTemplate": "/api/{version}/customerreference/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.40.81",
+          "Port": 4400
+        },
+        {
+          "Host": "192.168.40.82",
+          "Port": 4400
+        },
+        {
+          "Host": "192.168.40.83",
+          "Port": 4400
+        },
+        {
+          "Host": "192.168.40.105",
+          "Port": 4400
+        },
+        {
+          "Host": "192.168.40.106",
+          "Port": 4400
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/api/{version}/customerreference/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 1000,
+        "TimeoutValue": 5000
+      }
+    }
+
+    // end ***** GajinoCustomerRefrence
+
+  ],
+  "GlobalConfiguration": {
+    "RequestIdKey": "OcRequestId",
+    "AdministrationPath": "/administration"
+  }
+}

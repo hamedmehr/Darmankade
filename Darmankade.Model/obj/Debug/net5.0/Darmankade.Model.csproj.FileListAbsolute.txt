@@ -1,0 +1,12 @@
+D:\Hamed\source\repos\Darmankade\Darmankade.Model\bin\Debug\net5.0\Darmankade.Model.deps.json
+D:\Hamed\source\repos\Darmankade\Darmankade.Model\bin\Debug\net5.0\Darmankade.Model.dll
+D:\Hamed\source\repos\Darmankade\Darmankade.Model\bin\Debug\net5.0\ref\Darmankade.Model.dll
+D:\Hamed\source\repos\Darmankade\Darmankade.Model\bin\Debug\net5.0\Darmankade.Model.pdb
+D:\Hamed\source\repos\Darmankade\Darmankade.Model\obj\Debug\net5.0\Darmankade.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hamed\source\repos\Darmankade\Darmankade.Model\obj\Debug\net5.0\Darmankade.Model.AssemblyInfoInputs.cache
+D:\Hamed\source\repos\Darmankade\Darmankade.Model\obj\Debug\net5.0\Darmankade.Model.AssemblyInfo.cs
+D:\Hamed\source\repos\Darmankade\Darmankade.Model\obj\Debug\net5.0\Darmankade.Model.csproj.CoreCompileInputs.cache
+D:\Hamed\source\repos\Darmankade\Darmankade.Model\obj\Debug\net5.0\Darmankade.Model.dll
+D:\Hamed\source\repos\Darmankade\Darmankade.Model\obj\Debug\net5.0\ref\Darmankade.Model.dll
+D:\Hamed\source\repos\Darmankade\Darmankade.Model\obj\Debug\net5.0\Darmankade.Model.pdb
+D:\Hamed\source\repos\Darmankade\Darmankade.Model\obj\Debug\net5.0\Darmankade.Model.csproj.AssemblyReference.cache

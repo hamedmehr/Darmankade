@@ -1,0 +1,5 @@
+{
+  "HostName": "localhost:5672",
+  "UserName": "guest",
+  "Password": "guest"
+}

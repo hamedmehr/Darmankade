@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "fadXQUocgk2yohdl1u5LAF/PzPYvIfgRTe7QzIyj3KTmzdhvV4oZeSx5yzPjPP/Mj8CgR9nYUavYlbq8Nm07yg==",
+  "success": true,
+  "projectFilePath": "D:\\Hamed\\source\\repos\\Darmankade\\Darmankade.ServiceBroker\\Darmankade.ServiceBroker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hamed\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Hamed\\.nuget\\packages\\rabbitmq.client\\6.2.2\\rabbitmq.client.6.2.2.nupkg.sha512",
+    "C:\\Users\\Hamed\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Hamed\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

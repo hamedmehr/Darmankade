@@ -1,0 +1,17 @@
+D:\Hamed\source\repos\Darmankade\Darmankade.Application\obj\Debug\net5.0\Darmankade.Application.csproj.AssemblyReference.cache
+D:\Hamed\source\repos\Darmankade\Darmankade.Application\obj\Debug\net5.0\Darmankade.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hamed\source\repos\Darmankade\Darmankade.Application\obj\Debug\net5.0\Darmankade.Application.AssemblyInfoInputs.cache
+D:\Hamed\source\repos\Darmankade\Darmankade.Application\obj\Debug\net5.0\Darmankade.Application.AssemblyInfo.cs
+D:\Hamed\source\repos\Darmankade\Darmankade.Application\obj\Debug\net5.0\Darmankade.Application.csproj.CoreCompileInputs.cache
+D:\Hamed\source\repos\Darmankade\Darmankade.Application\bin\Debug\net5.0\Darmankade.Application.deps.json
+D:\Hamed\source\repos\Darmankade\Darmankade.Application\bin\Debug\net5.0\Darmankade.Application.dll
+D:\Hamed\source\repos\Darmankade\Darmankade.Application\bin\Debug\net5.0\ref\Darmankade.Application.dll
+D:\Hamed\source\repos\Darmankade\Darmankade.Application\bin\Debug\net5.0\Darmankade.Application.pdb
+D:\Hamed\source\repos\Darmankade\Darmankade.Application\bin\Debug\net5.0\Darmankade.Contract.dll
+D:\Hamed\source\repos\Darmankade\Darmankade.Application\bin\Debug\net5.0\Darmankade.Model.dll
+D:\Hamed\source\repos\Darmankade\Darmankade.Application\bin\Debug\net5.0\Darmankade.Contract.pdb
+D:\Hamed\source\repos\Darmankade\Darmankade.Application\bin\Debug\net5.0\Darmankade.Model.pdb
+D:\Hamed\source\repos\Darmankade\Darmankade.Application\obj\Debug\net5.0\Darmankade.Application.csproj.CopyComplete
+D:\Hamed\source\repos\Darmankade\Darmankade.Application\obj\Debug\net5.0\Darmankade.Application.dll
+D:\Hamed\source\repos\Darmankade\Darmankade.Application\obj\Debug\net5.0\ref\Darmankade.Application.dll
+D:\Hamed\source\repos\Darmankade\Darmankade.Application\obj\Debug\net5.0\Darmankade.Application.pdb
